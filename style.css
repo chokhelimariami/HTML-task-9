@@ -12,7 +12,7 @@
     
 }
 .cont{
-    width: 1110px;
+    max-width: 1110px;
     height: 762px;
     
     display: flex;
@@ -24,7 +24,7 @@
 
 }
 .top {
-    width: 540px;
+    max-width: 540px;
     height: 168px;
     justify-content: center;
     align-items: center;
@@ -56,12 +56,13 @@
 }
 
 .bottom{
-    width: 1110px;
+    max-width: 1110px;
     height: 520px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    gap: 30px;
 
 }
 p{
@@ -81,7 +82,7 @@ h1 {
 
 }
 .column1 {
-    width: 350px;
+    max-width: 350px;
     height: 250px;
     border-radius: 8px;
     background: #FFF;
@@ -95,10 +96,10 @@ h1 {
 }
 .img1 {
     position: absolute;
-    width: 64px;
+    max-width: 64px;
     height: 64px;
-    left: 254px;
-    top: 154px;
+    left: 60%;
+    top: 60%;
 }
 
 
@@ -108,13 +109,13 @@ h1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 32px;
+    gap: 30px;
 }
 .box1{
     border-radius: 8px;
     background: #FFF;
     box-shadow: 0px 15px 30px -11px rgba(131, 166, 210, 0.50);
-    width: 350px;
+    max-width: 350px;
     height: 250px;
     padding: 32px 32px 136px 32px;
     position: relative;
@@ -124,7 +125,7 @@ h1 {
 }
 
 .box2{
-    width: 350px;
+    max-width: 350px;
     height: 250px;
     border-radius: 8px;
     background: #FFF;
@@ -139,7 +140,7 @@ h1 {
 
 
 .column3 {
-    width: 350px;
+    max-width: 350px;
     height: 250px;
     border-radius: 8px;
     background: #FFF;
@@ -150,3 +151,55 @@ h1 {
     border-top-style: solid;
     border-top-color:#549EF2 ;
 }
+
+@media (max-width:1100px){
+
+ .cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+ } 
+.bottom { flex-direction: column;
+         justify-content: space-between;
+}
+.top{
+    max-width: 311px;
+    height: 161px;
+    display: flex;
+
+}
+.p1{
+    font-size: 24px;
+    letter-spacing: 0.167px;
+    max-width: 297px;
+}
+.p2{
+    font-size: 24px;
+    letter-spacing: 0.167px;
+    max-width: 295px;
+}
+.column1{
+    max-width: 311px;
+    height: 222px;
+}
+.img1{
+    max-width: 57px;
+    height: 57px;
+}
+.box1{
+    max-width: 311px;
+    height: 222px;
+}
+.box2{
+    max-width: 311px;
+    height: 222px;
+}
+.column3{
+    max-width: 311px;
+    height: 222px;
+}
+
+}
+
+    
+
